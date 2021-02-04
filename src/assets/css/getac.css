@@ -1,0 +1,49 @@
+@import "_base.css";
+@import "_form.css";
+@import "_buttons.css";
+@import "_grid.css";
+@import "_header.css";
+@import "_language-switch.css";
+
+@import "_stage.css";
+@import "_copy-centered.css";
+@import "_slick.css";
+@import "_gallery.css";
+@import "_teaser.css";
+@import "_whitepaper.css";
+@import "_teaser-augmented-reality.css";
+@import "_lightbox.css";
+@import "_content-tiles.css";
+@import "_teaser-centered.css";
+@import "_teaser-image.css";
+
+@import "_footer.css";
+@import "_cookie-policy.css";
+@import "bundle.css";
+
+main {
+  margin: 0;
+}
+
+#tradshow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#tradshow iframe {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#vs-footer {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
+  z-index: 200;
+}

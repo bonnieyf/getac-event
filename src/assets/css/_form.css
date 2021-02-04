@@ -1,0 +1,248 @@
+form {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-family: 'Hind-Regular', sans-serif;
+    font-size: 1.6rem;
+    color: #777;
+    display: inline-block;
+    margin: 0 0 5px 0;
+}
+
+input[type='text'] {
+    font-family: 'Hind-Regular', sans-serif;
+    font-size: 1.6rem;
+    width: auto;
+    max-width: 500px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #282828;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+    border-radius: 4px;
+    height: 50px;
+    margin: 0;
+    padding: 3px 15px 0 15px;
+}
+
+input[type='text']:hover,
+input[type='text']:focus,
+input[type='text']:active {
+    border: 1px solid #D5D5D5;
+    box-shadow: none;
+}
+
+input[type='checkbox'] {
+    display: inline;
+    position: relative;
+    top: 0;
+    left: -2px;
+}
+
+input[type='checkbox'] + label {
+    display: inline;
+}
+
+input[type='checkbox'] + label:after {
+    content: '';
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-error {
+    border: 1px solid #FF0000 !important;
+    box-shadow: none !important;
+}
+
+.form-error-message {
+    color: #FF0000 !important;
+}
+
+:root form button,
+:root form .button,
+:root form button:visited {
+    margin-right: 30px !important;
+}
+
+main select {
+    display: block;
+    font-family: 'Hind-Regular', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    width: auto;
+    max-width: 500px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #282828;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+    border-radius: 4px;
+    margin: 0;
+    padding: 3px 15px 0 15px;
+    height: 50px;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../icons/arrow-down-orange.svg'),
+    linear-gradient(to bottom, #fff 0%,#fff 100%);
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right 15px top 50%, 0 0;
+    /* icon size, gradient size */
+    background-size: 18px auto, 100%;
+}
+
+/* Hide arrow icon in IE */
+main select::-ms-expand {
+    display: none;
+}
+
+main select:hover {
+    border: 1px solid #D5D5D5;
+    box-shadow: none;
+}
+
+main select:focus {
+    border: 1px solid #D5D5D5;
+    box-shadow: none;
+    /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+    outline: none;
+}
+
+main select option {
+    font-weight: normal;
+}
+
+textarea {
+    font-family: 'Hind-Regular', sans-serif;
+    font-size: 1.6rem;
+    width: auto;
+    max-width: 500px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #282828;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+    border-radius: 4px;
+    margin: 0;
+    padding: 3px 15px 0 15px;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active {
+    border: 1px solid #D5D5D5;
+    box-shadow: none;
+}
+
+/* external classes */
+
+/* .layout.container-fluid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.row {
+    margin: 0 0 30px 0;
+}
+
+:root form a {
+    color: #777777;
+}
+
+.checkbox-label {
+    font-size: 1.6rem !important;
+    line-height: 1.375;
+}
+
+.LV_validation_message {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.single-checkbox-row + .LV_validation_message {
+    margin-top: -25px;
+}
+
+.LV_invalid {
+    color: #FF0000 !important;
+}
+
+.LV_valid {
+    color: green !important;
+}
+
+.LV_invalid_field {
+    border: 1px solid #FF0000 !important;
+    box-shadow: none !important;
+}
+
+/* :root input[type='submit'].submit-button-style {
+    margin-top: 30px;
+} */
+
+div[style*=overflow] {
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* dark version */
+.register {
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
+.register h1 {
+    position: relative;
+    font-size: 4.5rem;
+}
+
+.register h1::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -124px;
+    top: -10px;
+    height: 102px;
+    width: 114px;
+    background: url('../icons/360-registration-icon.svg') no-repeat;
+}
+@media (max-width: 1023px) {
+    .register h1 {
+        margin-top: 100px;
+    }
+
+    .register h1::before {
+        left: calc(50% - 57px);
+        top: -120px;
+    }
+}
+
+.register h1,
+.register p,
+.register label,
+:root .register label a,
+.whitepaper p,
+.whitepaper label,
+:root .whitepaper label a {
+    color: #fff;
+}
+
+.register div[style*=overflow],
+.whitepaper div[style*=overflow] {
+    background: transparent;
+}
+
+.register .LV_valid,
+.whitepaper .LV_valid {
+    color: lime !important;
+}
+
+form br {
+    display: none;
+}

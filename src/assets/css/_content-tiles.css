@@ -1,0 +1,73 @@
+.content-tiles {
+    margin: 0 0 120px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+}
+@media (max-width: 1023px) {
+    .teaser {
+        margin-bottom: 100px;
+    }
+}
+
+.content-tiles .gt-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+@media (max-width: 1023px) {
+    .content-tiles .gt-grid {
+        padding: 0 5px;
+    }
+}
+
+.content-tiles h2 {
+    font-family: 'Tradegothic-Bold', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+}
+@media (max-width: 1023px) {
+    .content-tiles h2 {
+        font-size: 2.6rem;
+        margin-bottom: 30px;
+    }
+}
+.content-tiles section {
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+    text-align: center;
+    flex: 0 1 calc(33% - 30px);
+    padding: 30px;
+    margin: 0 15px 30px;
+}
+@media (max-width: 1023px) {
+    .content-tiles section {
+        flex: 0 0 100%;
+    }
+}
+
+.content-tiles section img {
+    margin-bottom: 30px;
+    display: inline-block;
+    height: unset;
+}
+
+.content-tiles section h3,
+.content-tiles section h4 {
+    color: #D74B00;
+    font-size: 2.6rem;
+    margin: 0  0 15px 0;
+}
+@media (max-width: 1023px) {
+    .content-tiles section h3,
+    .content-tiles section h4 {
+        font-size: 2.2rem;
+    }
+}
+
+:root .content-tiles .slick-dots {
+    bottom: 10px;
+}

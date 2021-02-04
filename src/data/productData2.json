@@ -1,0 +1,17 @@
+[
+  {
+    "src": "http://localhost:3000/uploads/2020/06/heat_icon-1.png",
+    "title": "Better Heat Dissipation",
+    "desc": "Our thermal engineers have devised unique ways to dissipate the heat from the placement of the CPU on the motherboard to liquid filled copper pipes allowing the processor to stay cooler and perform near full power."
+  },
+  {
+    "src": "http://localhost:3000/uploads/2020/06/drop_icon-1.png",
+    "title": "Tested",
+    "desc": "Getac rugged computers are continuously put through a battery of torture tests in Getac’s R&D labs every day. We test products in ways they should never be used. We intentionally break them to find out their limitations so our engineers can make future products even better. Our testing is insane."
+  },
+  {
+    "src": "http://localhost:3000/uploads/2020/06/core_manufacturer_icon.png",
+    "title": "Magnesium Alloy Chassis",
+    "desc": "As the third-largest manufacturer of magnesium alloy chassis, only Getac can claim it’s rugged notebooks are manufactured in-house down to the chassis. All of our fully rugged clamshell notebooks use four independent chassis structures – each made out of magnesium alloy. Our expertise in magnesium alloy manufacturing allows us to build a rugged notebook that can withstand drops, bumps, and other impacts."
+  }
+]

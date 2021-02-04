@@ -1,0 +1,163 @@
+.stage {
+  position: relative;
+  background: #1b1b1b;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+  padding: 30px 0 60px;
+  margin: 0 0 120px 0;
+  min-height: calc(100vh - 120px);
+}
+@media (max-width: 1023px) {
+  .stage {
+    padding: 0;
+    margin-bottom: 100px;
+    background-position: 50% 0;
+  }
+}
+
+.stage .linkedin-share {
+  color: #fff;
+  position: relative;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+@media (max-width: 1023px) {
+  .stage .linkedin-share {
+    display: block;
+    max-width: 250px;
+    margin-top: 61vh;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}
+
+.stage .linkedin-share::before {
+  content: "";
+  display: inline-block;
+  width: 29px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  margin-right: 2px;
+  background: url("../icons/linkedin-share.svg") no-repeat 0 0;
+}
+
+.stage h1 {
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  .stage h1 {
+    font-size: 4.2rem;
+    max-width: 100%;
+  }
+
+  .stage h1::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    background: url("../icons/arrow-down-orange.svg") no-repeat 50% 0;
+  }
+}
+
+.stage .subline {
+  font-size: 2.8rem;
+  color: #fff;
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  .stage .subline {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.recommendation {
+  margin-top: 30px;
+  color: #d5d5d5;
+  display: flex;
+}
+@media (max-width: 1023px) {
+  .recommendation {
+    flex-direction: column;
+  }
+}
+
+.recommendation img {
+  margin-right: 30px;
+}
+@media (max-width: 1023px) {
+  .recommendation img {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}
+
+.recommendation span {
+  max-width: 200px;
+}
+
+@media (max-width: 1023px) {
+  .recommendation span {
+    align-self: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+.scroll-hint {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .scroll-hint {
+    display: none;
+  }
+}
+
+:root .button-icon-360 {
+  position: relative;
+  padding-left: 60px;
+  margin-right: 30px;
+}
+
+:root .button-icon-360::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/icons/360-icon.svg");
+}
+
+@media (max-width: 1023px) {
+  .stage .gt-col-12 {
+    text-align: center;
+  }
+
+  .stage h1,
+  .stage p {
+    text-align: left;
+  }
+
+  :root .stage .button {
+    min-width: 258px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
