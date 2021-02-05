@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/getac-event/static/css/main.5560b206.chunk.css",
+    "main.js": "/getac-event/static/js/main.af192fb9.chunk.js",
+    "main.js.map": "/getac-event/static/js/main.af192fb9.chunk.js.map",
+    "runtime-main.js": "/getac-event/static/js/runtime-main.9a67f61c.js",
+    "runtime-main.js.map": "/getac-event/static/js/runtime-main.9a67f61c.js.map",
+    "static/js/2.883f4b12.chunk.js": "/getac-event/static/js/2.883f4b12.chunk.js",
+    "static/js/2.883f4b12.chunk.js.map": "/getac-event/static/js/2.883f4b12.chunk.js.map",
+    "static/js/3.d699e4c4.chunk.js": "/getac-event/static/js/3.d699e4c4.chunk.js",
+    "static/js/3.d699e4c4.chunk.js.map": "/getac-event/static/js/3.d699e4c4.chunk.js.map",
+    "index.html": "/getac-event/index.html",
+    "static/css/main.5560b206.chunk.css.map": "/getac-event/static/css/main.5560b206.chunk.css.map",
+    "static/js/2.883f4b12.chunk.js.LICENSE.txt": "/getac-event/static/js/2.883f4b12.chunk.js.LICENSE.txt",
+    "static/media/getac.css": "/getac-event/static/media/tradegothic-bold-webfont.f6b9bdb8.woff",
+    "static/media/E-Book.2fb637d8.jpg": "/getac-event/static/media/E-Book.2fb637d8.jpg",
+    "static/media/Getac_-M04-Gallery_UX10@2x.a06ba2e1.png": "/getac-event/static/media/Getac_-M04-Gallery_UX10@2x.a06ba2e1.png",
+    "static/media/Getac_LP_M11_TeaserAR-1.5249770d.png": "/getac-event/static/media/Getac_LP_M11_TeaserAR-1.5249770d.png",
+    "static/media/UX10_EMSScreenshot@2x.501f45f2.png": "/getac-event/static/media/UX10_EMSScreenshot@2x.501f45f2.png",
+    "static/media/drops-whitepaper.bb1bb99b.png": "/getac-event/static/media/drops-whitepaper.bb1bb99b.png",
+    "static/media/getac-keyvisual_CTe_v3-landingpage-layout.d56dbed5.jpg": "/getac-event/static/media/getac-keyvisual_CTe_v3-landingpage-layout.d56dbed5.jpg",
+    "static/media/getac-logo.ed0a2836.svg": "/getac-event/static/media/getac-logo.ed0a2836.svg",
+    "static/media/windows-10-logo.d8de480c.svg": "/getac-event/static/media/windows-10-logo.d8de480c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a67f61c.js",
+    "static/js/2.883f4b12.chunk.js",
+    "static/css/main.5560b206.chunk.css",
+    "static/js/main.af192fb9.chunk.js"
+  ]
+}
