@@ -3,11 +3,11 @@ import Footer from "./tpl/Footer";
 import HomePage from "./component/index/HomePage";
 import TradShow from "./component/TradShow";
 import "./assets/css/getac.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header></Header>
         <main>
@@ -20,7 +20,7 @@ function App() {
           </Switch>
         </main>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
