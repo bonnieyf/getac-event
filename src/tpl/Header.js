@@ -3,7 +3,7 @@ function Header() {
   return (
     <header class="header">
       <div class="gt-grid">
-        <a href="/" class="logo">
+        <a href="/getac-event" class="logo">
           <img src={logo} width="97" height="29" alt="Getac Logo" />
         </a>
 

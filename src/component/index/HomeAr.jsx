@@ -1,5 +1,5 @@
 import bgPath from "./../../assets/uploads/2020/06/Getac_LP_M11_TeaserAR-1.png";
-
+import styles from "./../../assets/css/homear.module.css";
 function HomeAr() {
   let style = {
     backgroundImage: `url('${bgPath}')`,
@@ -7,7 +7,7 @@ function HomeAr() {
 
   return (
     <>
-      <article class="teaser-augmented-reality" id="teaser_ar" style={style}>
+      <article class="teaser-augmented-reality" id="teaser_ar" style={styles}>
         <div class="gt-grid">
           <div class="gt-col-6">
             <h2>Experience Getac Devices – with Augmented Reality</h2>
@@ -17,7 +17,7 @@ function HomeAr() {
               experience.
             </p>
           </div>
-          <div class="gt-col-6"></div>
+          <div class="gt-col-6" />
         </div>
 
         <div class="gt-grid">
@@ -39,7 +39,7 @@ function HomeAr() {
         </div>
       </article>
       <div class="gt-lightbox-content">
-        <button class="gt-lightbox-close"></button>
+        <button class="gt-lightbox-close" />
 
         <div class="gt-grid">
           <div class="gt-col-12">
@@ -66,7 +66,7 @@ function HomeAr() {
             <div
               id="modelcontainer"
               class="gt-lightbox-ar-model-viewer-embed"
-            ></div>
+            />
           </div>
           <div class="ar-desktop-content">
             <div class="gt-col-2 gt-indent-1">

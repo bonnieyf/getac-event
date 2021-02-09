@@ -531,7 +531,7 @@ select {
 .c-info-box__pivot {
   z-index: 85;
 }
-ul {
+/* ul {
   font-size: 1.6rem;
   line-height: 1.375;
   margin: 0 0 3rem;
@@ -555,7 +555,7 @@ ul li::before {
   position: absolute;
   left: 0;
   top: 4px;
-}
+} */
 .c-box {
   background-color: transparent;
   width: 184px;

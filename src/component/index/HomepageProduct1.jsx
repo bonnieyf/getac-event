@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProdcutItem from "./ProductItem";
-import datas from "./../../data/productData.json";
+import datas from "../../data/productData.json";
 const HomepageProduct1 = (props) => {
   const [data, setData] = useState(null);
 

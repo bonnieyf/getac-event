@@ -7,7 +7,7 @@ import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App">
         <Header></Header>
         <main>
