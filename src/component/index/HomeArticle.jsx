@@ -7,7 +7,7 @@ function HomeArticle() {
   };
   return (
     <article class="whitepaper" id="whitepaper">
-      <div class="whitepaper-image-background" style={style}></div>
+      <div class="whitepaper-image-background" style={style} />
       <div class="whitepaper-dark-background">
         <div class="gt-grid">
           <div class="gt-col-6">

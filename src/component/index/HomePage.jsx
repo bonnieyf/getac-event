@@ -6,6 +6,7 @@ import HomepageProduct2 from "./HomepageProduct2";
 import HomeDownload from "./HomeDownload";
 import HomeAr from "./HomeAr";
 import HomeArticle from "./HomeArticle";
+import HomeArticle2 from "./HomeArticle2";
 import MainBottom from "./MainBottom";
 
 function HomePage() {
@@ -25,11 +26,11 @@ function HomePage() {
         desc="All our rugged computing solutions include a full range of accessories. Designed to ensure perfect mobility and ease of use in the field or on the military base."
       />
       <HomepageProduct1 />
-      <HomeDownload></HomeDownload>
+      <HomeDownload />
       <HomepageProduct2 />
-      <HomeAr></HomeAr>
-      <HomeArticle></HomeArticle>
-      <MainBottom></MainBottom>
+      <HomeAr />
+      <HomeArticle2 />
+      <MainBottom />
     </div>
   );
 }
