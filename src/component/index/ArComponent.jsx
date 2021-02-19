@@ -69,7 +69,7 @@ function ArComponent() {
                   />
                 </div>
                 <div class="ar-desktop-content">
-                  <div class="gt-col-2 gt-indent-1">
+                  <div class="gt-col-2 gt-indent-2">
                     <ol>
                       <li>
                         Scan this code with your smartphone:

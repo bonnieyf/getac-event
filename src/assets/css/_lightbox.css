@@ -108,6 +108,8 @@
 
 .gt-lightbox-ar-model-viewer-embed {
   background: #2478ff;
-  width: 746px;
-  min-height: 523px;
+  max-width: 746px;
+  width: 100%;
+  padding-top: 100%;
+  /* min-height: 523px; */
 }
