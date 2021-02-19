@@ -3,25 +3,26 @@ import styles from "./../../assets/css/homear.module.css";
 import React, { useState } from "react";
 import ArComponent from "./ArComponent";
 import SlideToggle from "react-slide-toggle";
-
+import { useTranslation } from "react-i18next";
 function HomeAr() {
-  let style = {
+  let bGstyle = {
     backgroundImage: `url('${bgPath}')`,
   };
 
   const [toggler, setToggler] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <>
-      <article class="teaser-augmented-reality" id="teaser_ar" style={styles}>
+      <article
+        class="teaser-augmented-reality"
+        id="teaser_ar"
+        style={{ ...styles, ...bGstyle }}
+      >
         <div class="gt-grid">
           <div class="gt-col-6">
-            <h2>Experience Getac Devices – with Augmented Reality</h2>
-            <p>
-              Discover devices like never before – from every angle and in your
-              daily environment. Click on the product to enter the 3D
-              experience.
-            </p>
+            <h2>{t("homepageSection7.title")}</h2>
+            <p>{t("homepageSection7.desc")}</p>
           </div>
           <div class="gt-col-6" />
         </div>

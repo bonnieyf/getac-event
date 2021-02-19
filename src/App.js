@@ -9,14 +9,14 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
-        <Header></Header>
+        <Header />
         <main>
           <Switch>
             <Route exact path="/">
               <HomePage />
               <Footer />
             </Route>
-            <Route path="/tradshow/" component={TradShow}></Route>
+            <Route path="/tradshow/" component={TradShow} />
           </Switch>
         </main>
       </div>

@@ -2,8 +2,8 @@ import bg1 from "../../assets/uploads/2020/06/Getac_-M04-Gallery_UX10@2x.png";
 import slideImg1Mobile from "../../assets/uploads/2020/06/UX10_EMSScreenshot@2x.png";
 import slideImg1 from "../../assets/uploads/2020/06/UX10_EMSScreenshot@2x.png";
 import Slider from "react-slick";
-
-function HomepageSlider() {
+import { useTranslation } from "react-i18next";
+function HomepageSlider(props) {
   let style = {
     backgroundImage: `url(${bg1})`,
   };
@@ -29,24 +29,18 @@ function HomepageSlider() {
     ],
   };
 
+  const { t, i18n } = useTranslation();
+
   return (
     <Slider {...settings}>
       <section class="gt-grid">
         <div class="gt-col-12">
           <div class="product-description">
-            <h3>UX10 Medic Soldier</h3>
-            <p>
-              Intro Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut. Intro Lorem ipsum dolor sit
-              amet, consetetur sadipscing lorem lorem elitr, sed diam nonumy
-              eirmod tempor invidunt ut.
-            </p>
+            <h3>{t("homepageSection2.silde1.title")}</h3>
+            <p>{t("homepageSection2.silde1.desc")}</p>
 
             <a href="#" class="button">
-              Experience now
-            </a>
-            <a href="#" class="button button button-border">
-              Sekundärlink
+              {t("button.EnterVirtualExhibition")}
             </a>
           </div>
 
@@ -68,19 +62,11 @@ function HomepageSlider() {
       <section class="gt-grid">
         <div class="gt-col-12">
           <div class="product-description">
-            <h3>UX10 Medic Soldier</h3>
-            <p>
-              Intro Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut. Intro Lorem ipsum dolor sit
-              amet, consetetur sadipscing lorem lorem elitr, sed diam nonumy
-              eirmod tempor invidunt ut.
-            </p>
+            <h3>{t("homepageSection2.silde1.title")}</h3>
+            <p>{t("homepageSection2.silde1.desc")}</p>
 
             <a href="#" class="button">
-              Experience now
-            </a>
-            <a href="#" class="button button button-border">
-              Sekundärlink
+              {t("button.EnterVirtualExhibition")}
             </a>
           </div>
 

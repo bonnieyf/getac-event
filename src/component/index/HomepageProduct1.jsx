@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ProdcutItem from "./ProductItem";
 import datas from "../../data/productData.json";
+import { useTranslation } from "react-i18next";
+
 const HomepageProduct1 = (props) => {
   const [data, setData] = useState(null);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     setData(datas);
@@ -18,9 +21,9 @@ const HomepageProduct1 = (props) => {
             <ProdcutItem
               key={id}
               src={val.src}
-              title={val.title}
-              desc={val.desc}
-            ></ProdcutItem>
+              title={t(`homepageSection3.items.item${id + 1}.title`)}
+              desc={t(`homepageSection3.items.item${id + 1}.desc`)}
+            />
           );
         })}
       </div>

@@ -2,11 +2,13 @@ import window10Logo from "./../../assets/icons/windows-10-logo.svg";
 import arrow from "./../../assets/icons/arrow-down-orange.svg";
 import bgPath from "./../../assets/media/getac-keyvisual_CTe_v3-landingpage-layout.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function HomepageKV() {
   let style = {
     backgroundImage: `url('${bgPath}')`,
   };
+  const { t, i18n } = useTranslation();
   return (
     <article class="stage" style={style}>
       <div class="gt-grid">
@@ -17,20 +19,17 @@ function HomepageKV() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Share on LinkedIn
+            {t("homepageKv.title")}
           </a>
 
-          <h1>Defense Virtual Exhibition</h1>
-          <p class="subline">
-            Discover now Getac’s rugged solutions dedicated for special forces
-            and system integrators around the world in a unique 3D experience.
-          </p>
+          <h1>{t("homepageKV.title")}</h1>
+          <p class="subline">{t("homepageKV.desc")}</p>
 
           <Link to="/tradshow" class="button button-icon-360">
-            Unlock Virtual Exhibition
+            {t("button.UnlockVirtualExhibition")}
           </Link>
           <a href="#" class="button button-ghost">
-            Let’s Talk
+            {t("button.LetsTalk")}
           </a>
 
           <p class="recommendation">
@@ -40,7 +39,7 @@ function HomepageKV() {
               height="30"
               alt="Windows 10 Logo"
             />
-            <span> Getac recommends Windows 10 pro for business </span>
+            <span> {t("homepageKV.recommends")} </span>
           </p>
 
           <span class="scroll-hint">

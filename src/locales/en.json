@@ -1,0 +1,80 @@
+{
+  "homepageKV": {
+    "title": "DEFENCE VIRTUAL EXHIBITION",
+    "desc": "Discover now Getac’s rugged solutions dedicated for special forces and system integrators around the world in a unique 3D experience.",
+    "recommends": "Getac recommends Windows 10"
+  },
+  "homepageSection1": {
+    "title": "Defence Dedicated Solutions",
+    "desc": "Tactical communication is crucial to securely connect defence and relief forces. Getac devices link the field forces to the command post."
+  },
+  "homepageSection2": {
+    "silde1": {
+      "title": "Maritime Special Forces",
+      "desc": "Controlling underwater drones is essential to ensure safety at sea. This rugged computing solution integrates all required features and is resistant to water and salt fog.",
+      "photo1": "",
+      "photo2": ""
+    }
+  },
+  "homepageSection3": {
+    "title": "Accessories",
+    "desc": "All our rugged computing solutions include a full range of accessories. Designed to ensure perfect mobility and ease of use in the field or on the military base.",
+    "items": {
+      "item1": {
+        "title": "Carrying Solutions1",
+        "desc": "Whether you need a 4-point harness for more comfort or want to use simple accessories such as the rotating hand strap, we have the right solution to fit your needs."
+      },
+      "item2": {
+        "title": "Docking Solution",
+        "desc": "We offer a wide range of docking stations for the office or vehicle, to allow seamless connectivity and charging for your chosen device."
+      },
+      "item3": {
+        "title": "Peripheral Options",
+        "desc": "At a time of digitalisation of military operations, we offer a range of peripherals (keyboards, additional batteries, digital pen…). to ensure ease of use at all times."
+      }
+    }
+  },
+  "homepageSection4": {
+    "title": "DEFENCE AND TECHNOLOGY – AN EVER-CHANGING DYNAMIC",
+    "desc": "Defence was once a byword for innovation – conflict drove technology. However, in many new digital technologies like Cybersecurity, IoT, cloud and data collation/exploitation, the defence industry now lags behind the private sector."
+  },
+  "homepageSection5": {
+    "title": "Experience Getac Devices – with Augmented Reality",
+    "desc": "Discover devices like never before – from every angle and in your daily environment. Click on the product to enter the 3D experience."
+  },
+  "homepageSection6": {
+    "title": "WHY CHOOSE GETAC?",
+    "items": {
+      "item1": {
+        "title": "Better Heat Dissipation",
+        "desc": "Our thermal engineers have devised unique ways to dissipate the heat from the placement of the CPU on the motherboard to liquid filled copper pipes allowing the processor to stay cooler and perform near full power."
+      },
+      "item2": {
+        "title": "Tested",
+        "desc": "Getac rugged computers are continuously put through a battery of torture tests in Getac’s R&D labs every day. We test products in ways they should never be used. We intentionally break them to find out their limitations so our engineers can make future products even better. Our testing is insane."
+      },
+      "item3": {
+        "title": "Magnesium Alloy Chassis",
+        "desc": "As the third-largest manufacturer of magnesium alloy chassis, only Getac can claim it’s rugged notebooks are manufactured in-house down to the chassis. All of our fully rugged clamshell notebooks use four independent chassis structures – each made out of magnesium alloy. Our expertise in magnesium alloy manufacturing allows us to build a rugged notebook that can withstand drops, bumps, and other impacts."
+      }
+    }
+  },
+  "homepageSection7": {
+    "title": "Experience Getac Devices – with Augmented Reality",
+    "desc": "Discover devices like never before – from every angle and in your daily environment. Click on the product to enter the 3D experience."
+  },
+  "homepageSection8": {
+    "title": "Did you know? Getac and pureLiFi to bring ruggedized LiFi-enabled devices to market.",
+    "desc": "LiFi is high speed, bi-directional, networked wireless communications using light instead of radio waves. Secure from eavesdropping and invulnerable to outside interference, LiFi is ideal for defence applications."
+  },
+  "messages": {
+    "footerBottom": "YOU WANT MORE INFORMATION? WE ARE HAPPY TO HELP!"
+  },
+  "button": {
+    "UnlockVirtualExhibition": "Unlock Virtual Exhibition",
+    "LetsTalk": "Let’s Talk",
+    "EnterVirtualExhibition": "Enter Virtual Exhibition",
+    "DownloadWhitepaper": "Download Whitepaper",
+    "BeEnlightened": "Be Enlightened"
+  }
+}

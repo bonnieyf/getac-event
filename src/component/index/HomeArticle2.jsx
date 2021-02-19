@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import imgPath from "./../../assets/uploads/2020/06/pureLiFi-white2.png";
 import FsLightbox from "fslightbox-react";
+import { useTranslation } from "react-i18next";
 
 function HomeArticle2() {
   const [toggler, setToggler] = useState(false);
-
+  const { t, i18n } = useTranslation();
   return (
     <article class="teaser-centered">
       <div class="gt-grid">
@@ -28,17 +29,9 @@ function HomeArticle2() {
           />
         </div>
         <div class="gt-col-6">
-          <h3>
-            Did you know? Getac and pureLiFi to bring ruggedized LiFi-enabled
-            devices to market.
-          </h3>
+          <h3>{t("homepageSection8.title")}}</h3>
           <p />
-          <p>
-            LiFi is high speed, bi-directional, networked wireless
-            communications using light instead of radio waves. Secure from
-            eavesdropping and invulnerable to outside interference, LiFi is
-            ideal for defence applications.
-          </p>
+          <p>{t("homepageSection8.desc")}}</p>
           <p />
           <a
             href="https://www.getac.com/eu/news/getac-announces-a-partnership-with-purelifi-to-bring-ruggedized-lifi-devices-to-the-market/"
@@ -46,7 +39,7 @@ function HomeArticle2() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Be Enlightened
+            {t("button.BeEnlightened")}
           </a>
         </div>
       </div>

@@ -124,3 +124,9 @@
   height: 33px;
   background-image: url("../icons/ar-icon-text.svg");
 }
+
+#teaser_ar {
+  min-height: 100vh;
+  background-size: 600px auto;
+  background-position: right top;
+}

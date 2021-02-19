@@ -1,0 +1,80 @@
+{
+  "homepageKV": {
+    "title": "EXPOSITION VIRTUELLE – DÉFENSE",
+    "desc": "Découvrez les solutions robustes Getac dédiées aux forces spéciales, aux corps des armées et aux intégrateurs de systèmes dans cette expo virtuelle !",
+    "recommends": "Getac recommande Windows 10"
+  },
+  "homepageSection1": {
+    "title": "Des solutions dédiées à la défense",
+    "desc": "Les communications tactiques sont essentielles pour maintenir la connexion entre les forces de défense et de secours en toute sécurité. Les dispositifs Getac relient les forces déployées au poste de commandement."
+  },
+  "homepageSection2": {
+    "silde1": {
+      "title": "Maintenance des Hélicoptères",
+      "desc": "La maintenance des hélicoptères comprend les moteurs et les “opérations sur piste”, c’est-à-dire les préparatifs et les réglages avant décollage. L’ingénieur sur le terrain a alors besoin d’une solution informatique robuste avec des capacités avancées.",
+      "photo1": "",
+      "photo2": ""
+    }
+  },
+  "homepageSection3": {
+    "title": "Accessoires",
+    "desc": "Toutes nos solutions informatiques durcies disposent d’une gamme complète d’accessoires. Conçus pour assurer une parfaite mobilité et une facilité d’utilisation sur le terrain et de retour à la base militaire.",
+    "items": {
+      "item1": {
+        "title": "Solutions de portage",
+        "desc": "Que vous ayez besoin d’un harnais à 4 points pour plus de confort ou que vous souhaitiez utiliser des accessoires simples comme la dragonne rotative, nous avons la solution adaptée à vos besoins."
+      },
+      "item2": {
+        "title": "Stations d‘ accueil",
+        "desc": "Nous proposons une large gamme de stations d’accueil pour le bureau ou le véhicule, afin de permettre une connectivité et un chargement facilité de l’appareil choisi…"
+      },
+      "item3": {
+        "title": "Options périphériques",
+        "desc": "A l’heure de la digitalisation des opérations militaires, nous proposons une gamme de périphériques (claviers, batteries supplémentaires, stylo numérique…) pour assurer une facilité d’utilisation à tout moment."
+      }
+    }
+  },
+  "homepageSection4": {
+    "title": "LA DÉFENSE ET LA TECHNOLOGIE – UNE DYNAMIQUE EN CONSTANTE ÉVOLUTION",
+    "desc": "La défense était autrefois synonyme d’innovation – les guerres étant le moteur de la technologie.Cependant, dans de nombreuses nouvelles technologies numériques comme la cybersécurité, l’IdO, le cloud et la collecte/exploitation de données, l’industrie de la défense est désormais à la traîne par rapport au secteur privé."
+  },
+  "homepageSection5": {
+    "title": "Experience Getac Devices – with Augmented Reality",
+    "desc": "Discover devices like never before – from every angle and in your daily environment. Click on the product to enter the 3D experience."
+  },
+  "homepageSection6": {
+    "title": "POURQUOI GETAC ?",
+    "items": {
+      "item1": {
+        "title": "Meilleure dissipation de la chaleur",
+        "desc": "Quand il faut éviter la surchauffe, la plupart des ordinateurs durcis réduisent le régime de l’unité centrale ; la baisse de puissance peut alors, dans certains cas, atteindre 36 % . Nos spécialistes ont imaginé de disposer l’unité centrale sur la carte mère afin de faciliter la dissipation de chaleur ou de refroidir l’ordinateur au moyen de tuyaux de cuivre remplis de liquide, pour que votre ordinateur chauffe moins tout en fonctionnant presque à pleine puissance."
+      },
+      "item2": {
+        "title": "Testés",
+        "desc": "Les ordinateurs durcis de Getac subissent chaque jour les pires tortures dans nos laboratoires de R&D. Nous faisons tout ce qu’il ne faut pas leur faire. Nous les cassons exprès, afin de connaître leurs limites et de développer des produits encore plus résistants. Nos tests sont d’une sauvagerie inimaginable."
+      },
+      "item3": {
+        "title": "Châssis en alliage de magnésium",
+        "desc": "Getac conçoit et fabrique ses ordinateurs portables durcis jusqu’au châssis. Tous nos ordinateurs complètement durcis se basent sur quatre structures de châssis indépendantes en alliage de magnésium. Notre expérience dans la fabrication des alliages de magnésium nous permet de fabriquer des ordinateurs portables qui résistent aux chutes, aux chocs, aux liquides et autres agressions."
+      }
+    }
+  },
+  "homepageSection7": {
+    "title": "Prenez les appareils Getac dans votre environnement grâce à la Réalité Augmentée",
+    "desc": "Découvrez les appareils Getac comme jamais auparavant. Sous tous les angles. Dans votre environnement quotidien."
+  },
+  "homepageSection8": {
+    "title": "Getac et PureLiFi, un partenariat lumineux pour développer des appareils robustes intégrant la technologie LiFi !",
+    "desc": "LiFi est un système de communication sans fil à haut débit, bidirectionnel et en réseau, qui utilise la lumière au lieu des ondes radio. Sécurisé contre les écoutes et invulnérable aux interférences extérieures, LiFi est idéal pour les applications de défense."
+  },
+  "messages": {
+    "footerBottom": "Besoin de plus d’informations ? Nous sommes heureux de vous aider !"
+  },
+  "button": {
+    "UnlockVirtualExhibition": "Débloquer l’expérience 3D",
+    "LetsTalk": "Demander une réunion virtuelle",
+    "EnterVirtualExhibition": "Enter Virtual Exhibition",
+    "DownloadWhitepaper": "Télécharger le Livre Blanc",
+    "BeEnlightened": "Soyez éclairé"
+  }
+}
