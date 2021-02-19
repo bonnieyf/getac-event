@@ -8,12 +8,8 @@ function Header() {
     i18n.changeLanguage(lng);
   };
 
-  const [currentLang, setCurrentLang] = useState("en");
-
   function handleSelectChange(e) {
-    console.log(e)
-    setCurrentLang(e.target.value);
-    changeLanguage(currentLang);
+    changeLanguage(e.target.value);
   }
 
   return (
@@ -42,7 +38,6 @@ function Header() {
             <label>
               <select
                 class="language-switch-select"
-                value={currentLang}
                 onChange={handleSelectChange}
               >
                 <option value="en">English</option>
