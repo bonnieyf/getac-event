@@ -3,7 +3,7 @@ import Footer from "./tpl/Footer";
 import HomePage from "./component/index/HomePage";
 import TradShow from "./component/TradShow";
 import "./assets/css/getac.css";
-import { HashRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
               <Footer />
             </Route>
             <Route path="/:lang/tradshow/" component={TradShow} />
-            <Redirect to="/en/" />
           </Switch>
         </main>
       </div>

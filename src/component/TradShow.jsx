@@ -1,11 +1,12 @@
+import path from "../assets/icons/headphones.svg";
 function TradShow() {
   return (
     <>
       <div id="tradshow">
         <iframe
-          src="https://billzeratul.github.io/WebGL_test/"
+          src="https://i.simmer.io/@BillShih/getac-utility"
           frameborder="0"
-        ></iframe>
+        />
       </div>
       <div id="vs-footer">
         <footer class="c-footer">
@@ -34,7 +35,7 @@ function TradShow() {
               id="appointment"
               class="c-footer__button-link"
             >
-              <img src="src/assets/icons/headphones.svg" alt="headphones" />
+              <img src={path} alt="headphones" />
               Request a Virtual Meeting
             </a>
           </div>
