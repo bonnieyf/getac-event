@@ -1,33 +1,34 @@
 {
   "files": {
-    "main.css": "./static/css/main.316bd126.chunk.css",
-    "main.js": "./static/js/main.f643c25c.chunk.js",
-    "main.js.map": "./static/js/main.f643c25c.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.38c50d78.js",
-    "runtime-main.js.map": "./static/js/runtime-main.38c50d78.js.map",
-    "static/js/2.0117657a.chunk.js": "./static/js/2.0117657a.chunk.js",
-    "static/js/2.0117657a.chunk.js.map": "./static/js/2.0117657a.chunk.js.map",
-    "static/js/3.c4d3a481.chunk.js": "./static/js/3.c4d3a481.chunk.js",
-    "static/js/3.c4d3a481.chunk.js.map": "./static/js/3.c4d3a481.chunk.js.map",
+    "main.css": "./static/css/main.b2deb206.chunk.css",
+    "main.js": "./static/js/main.275190e3.chunk.js",
+    "main.js.map": "./static/js/main.275190e3.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4a1fb8fe.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4a1fb8fe.js.map",
+    "static/js/2.2e9d9878.chunk.js": "./static/js/2.2e9d9878.chunk.js",
+    "static/js/2.2e9d9878.chunk.js.map": "./static/js/2.2e9d9878.chunk.js.map",
+    "static/js/3.dbd89770.chunk.js": "./static/js/3.dbd89770.chunk.js",
+    "static/js/3.dbd89770.chunk.js.map": "./static/js/3.dbd89770.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.316bd126.chunk.css.map": "./static/css/main.316bd126.chunk.css.map",
-    "static/js/2.0117657a.chunk.js.LICENSE.txt": "./static/js/2.0117657a.chunk.js.LICENSE.txt",
+    "static/css/main.b2deb206.chunk.css.map": "./static/css/main.b2deb206.chunk.css.map",
+    "static/js/2.2e9d9878.chunk.js.LICENSE.txt": "./static/js/2.2e9d9878.chunk.js.LICENSE.txt",
     "static/media/getac.css": "./static/media/tradegothic-bold-webfont.f6b9bdb8.woff",
     "static/media/E-Book.2fb637d8.jpg": "./static/media/E-Book.2fb637d8.jpg",
     "static/media/Getac_-M04-Gallery_UX10@2x.a06ba2e1.png": "./static/media/Getac_-M04-Gallery_UX10@2x.a06ba2e1.png",
     "static/media/Getac_LP_M11_TeaserAR-1.5249770d.png": "./static/media/Getac_LP_M11_TeaserAR-1.5249770d.png",
     "static/media/UX10_EMSScreenshot@2x.501f45f2.png": "./static/media/UX10_EMSScreenshot@2x.501f45f2.png",
-    "static/media/homear.module.css": "./static/media/gesture.52dc0a4e.svg",
+    "static/media/homear.module.css": "./static/media/gesture.92f6c985.svg",
     "static/media/drops-whitepaper.bb1bb99b.png": "./static/media/drops-whitepaper.bb1bb99b.png",
     "static/media/getac-keyvisual_CTe_v3-landingpage-layout.d56dbed5.jpg": "./static/media/getac-keyvisual_CTe_v3-landingpage-layout.d56dbed5.jpg",
-    "static/media/getac-logo.bc3f7dce.svg": "./static/media/getac-logo.bc3f7dce.svg",
+    "static/media/getac-logo.ed0a2836.svg": "./static/media/getac-logo.ed0a2836.svg",
+    "static/media/headphones.37e56e6e.svg": "./static/media/headphones.37e56e6e.svg",
     "static/media/pureLiFi-white2.df19ebb5.png": "./static/media/pureLiFi-white2.df19ebb5.png",
-    "static/media/windows-10-logo.bb94e1e6.svg": "./static/media/windows-10-logo.bb94e1e6.svg"
+    "static/media/windows-10-logo.d8de480c.svg": "./static/media/windows-10-logo.d8de480c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.38c50d78.js",
-    "static/js/2.0117657a.chunk.js",
-    "static/css/main.316bd126.chunk.css",
-    "static/js/main.f643c25c.chunk.js"
+    "static/js/runtime-main.4a1fb8fe.js",
+    "static/js/2.2e9d9878.chunk.js",
+    "static/css/main.b2deb206.chunk.css",
+    "static/js/main.275190e3.chunk.js"
   ]
 }
