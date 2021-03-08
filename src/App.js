@@ -12,11 +12,11 @@ function App() {
         <Header />
         <main>
           <Switch>
-            <Route exact path="/:lang/">
+            <Route exact path="/">
               <HomePage />
               <Footer />
             </Route>
-            <Route path="/:lang/tradshow/" component={TradShow} />
+            <Route path="/tradshow/" component={TradShow} />
             <Redirect to="/en/" />
           </Switch>
         </main>
