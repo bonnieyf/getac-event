@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Getac_test</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/output_FPS.json",
+        { onProgress: UnityProgress }
+      );
+    </script>
+    <style>
+      #lightbox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 500px;
+        height: 400px;
+        z-index: 200;
+        background-color: #000;
+      }
+
+      #lightbox-close {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        text-decoration: none;
+        color: #000;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 100vw; height: 100vh"></div>
+    </div>
+
+    <div id="lightbox" style="display: none">
+      <a href="#" id="lightbox-close">X</a>
+      <iframe
+        id="youtube"
+        width="560"
+        height="315"
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script>
+      let close = document.getElementById("lightbox-close");
+      let lbBox = document.getElementById("lightbox");
+      let youtube = document.getElementById("youtube");
+      close.addEventListener("click", function() {
+        youtube.setAttribute("src", "");
+        lbBox.style.display = "none";
+      });
+
+      function CheckLoad(url) {
+        youtube.setAttribute("src", `https://www.youtube.com/embed/${url}`);
+        lbBox.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
