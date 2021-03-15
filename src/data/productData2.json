@@ -1,11 +1,11 @@
 [
   {
-    "src": "http://localhost:3000/uploads/2020/06/heat_icon-1.png"
+    "src": "./uploads/2020/06/heat_icon-1.png"
   },
   {
-    "src": "http://localhost:3000/uploads/2020/06/drop_icon-1.png"
+    "src": "./uploads/2020/06/drop_icon-1.png"
   },
   {
-    "src": "http://localhost:3000/uploads/2020/06/core_manufacturer_icon.png"
+    "src": "./uploads/2020/06/core_manufacturer_icon.png"
   }
 ]

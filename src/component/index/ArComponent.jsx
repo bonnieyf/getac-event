@@ -28,10 +28,10 @@ function ArComponent() {
               class="teaser-augmented-reality-content"
               data-embed="B360"
               data-mobile="/ar/show.php?product=B360"
-              data-qr="http://localhost:81/website/web/app/uploads/2020/06/B360.png"
+              data-qr="./uploads/2020/06/B360.png"
             >
               <img
-                src="http://localhost:81/website/web/app/uploads/2020/06/B360_08_final-os.png"
+                src="./uploads/2020/06/B360_08_final-os.png"
                 width="90"
                 height="80"
                 alt="B360 - True Ruggedness paired with a sleek Design"
@@ -83,7 +83,7 @@ function ArComponent() {
                         Scan this code with your smartphone:
                         <img
                           id="qrcode"
-                          src="http://localhost:81/website/web/app/uploads/2020/06/B360.png"
+                          src="./uploads/2020/06/B360.png"
                           width="164"
                           height="166"
                           alt=""

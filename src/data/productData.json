@@ -1,11 +1,11 @@
 [
   {
-    "src": "http://localhost:3000/uploads/2020/06/IMG_5725-1024.png"
+    "src": "./uploads/2020/06/IMG_5725-1024.png"
   },
   {
-    "src": "http://localhost:3000/uploads/2020/06/IMG_5795-1024.png"
+    "src": "./uploads/2020/06/IMG_5795-1024.png"
   },
   {
-    "src": "http://localhost:3000/uploads/2020/06/IMG_5845-1024.png"
+    "src": "./uploads/2020/06/IMG_5845-1024.png"
   }
 ]
