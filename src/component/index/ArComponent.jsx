@@ -90,7 +90,7 @@ function ArComponent() {
                         />
                         <a
                           id="qrlink"
-                          href="/ar/show.php?product=B360"
+                          href="#"
                           class="copy-qr-code"
                         >
                           Copy this link
