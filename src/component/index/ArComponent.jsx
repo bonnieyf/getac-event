@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import SlideToggle from "react-slide-toggle";
+import "@google/model-viewer";
+import model from "./../../assets/ar/V110/V110.glb";
 
 function ArComponent() {
   const onOpen = () => {
@@ -66,7 +68,13 @@ function ArComponent() {
                   <div
                     id="modelcontainer"
                     class="gt-lightbox-ar-model-viewer-embed"
-                  />
+                  >
+                    <model-viewer
+                      src={model}
+                      camera-controls=""
+                      ar-status="not-presenting"
+                    />
+                  </div>
                 </div>
                 <div class="ar-desktop-content">
                   <div class="gt-col-2 gt-indent-2">

@@ -107,9 +107,18 @@
 }
 
 .gt-lightbox-ar-model-viewer-embed {
-  background: #2478ff;
+  position: relative;
+  background: #bfbfbf;
   max-width: 746px;
   width: 100%;
   padding-top: 100%;
   /* min-height: 523px; */
+}
+
+.gt-lightbox-ar-model-viewer-embed model-viewer {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
