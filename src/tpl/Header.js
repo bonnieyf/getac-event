@@ -1,6 +1,7 @@
 import logo from "./../assets/media/getac-logo.svg";
 import React, { useState } from "react";
 import i18n from "../i18n";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { withNamespaces } from "react-i18next";
 
 function Header() {
@@ -15,9 +16,9 @@ function Header() {
   return (
     <header class="header">
       <div class="gt-grid">
-        <a href="/getac-event" class="logo">
+        <Link to="/" class="logo">
           <img src={logo} width="97" height="29" alt="Getac Logo" />
-        </a>
+        </Link>
 
         <nav class="navigation">
           <a href="#product-updates">Product Updates</a>
