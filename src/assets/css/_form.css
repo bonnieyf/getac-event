@@ -186,7 +186,7 @@ textarea:active {
 
 div[style*="overflow"]:not(.gt-lightbox-content) {
   border-radius: 4px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 /* dark version */

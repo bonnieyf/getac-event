@@ -16,7 +16,7 @@ function TradShow() {
         />
         {/* <Unity unityContext={unityContext} /> */}
       </div>
-      <div id="vs-footer">
+      {/* <div id="vs-footer">
         <footer class="c-footer">
           <div class="gt-grid">
             <nav>
@@ -48,7 +48,7 @@ function TradShow() {
             </a>
           </div>
         </footer>
-      </div>
+      </div> */}
     </>
   );
 }

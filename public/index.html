@@ -49,7 +49,7 @@
       });
     </script> -->
 
-    <script>
+    <!-- <script>
       function initFreshChat() {
         window.fcWidget.init({
           token: "d0c51731-997d-4b1a-8ef5-af4d605ad5c6",
@@ -72,6 +72,30 @@
       window.addEventListener
         ? window.addEventListener("load", initiateCall, !1)
         : window.attachEvent("load", initiateCall, !1);
+    </script> -->
+
+    <!-- Start of REVE Chat Script-->
+    <script type="text/javascript">
+      window.$_REVECHAT_API ||
+        (function(d, w) {
+          var r = ($_REVECHAT_API = function(c) {
+            r._.push(c);
+          });
+          w.__revechat_account = "1990489";
+          w.__revechat_version = 2;
+          r._ = [];
+          var rc = d.createElement("script");
+          rc.type = "text/javascript";
+          rc.async = true;
+          rc.setAttribute("charset", "utf-8");
+          rc.src =
+            ("https:" == document.location.protocol ? "https://" : "http://") +
+            "static.revechat.com/widget/scripts/new-livechat.js?" +
+            new Date().getTime();
+          var s = d.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(rc, s);
+        })(document, window);
     </script>
+    <!-- End of REVE Chat Script -->
   </body>
 </html>

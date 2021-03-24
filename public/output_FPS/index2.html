@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Getac_test</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <style>
+      #lightbox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 500px;
+        height: 400px;
+        z-index: 200;
+        background-color: #000;
+      }
+
+      #lightbox-close {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        text-decoration: none;
+        color: #000;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .button {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 238px;
+      }
+
+      .button-top {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        width: 80px;
+        padding-top: 70px;
+        background-color: red;
+      }
+      .button-down {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 80px;
+        padding-top: 70px;
+        background-color: blue;
+      }
+
+      .button-left {
+        position: absolute;
+        top: 80px;
+        left: 0%;
+        width: 80px;
+        padding-top: 70px;
+        background-color: green;
+      }
+
+      .button-right {
+        position: absolute;
+        top: 80px;
+        left: 160px;
+        width: 80px;
+        padding-top: 70px;
+        background-color: green;
+      }
+
+      #unity-canvas {
+        width: 100vw !important;
+        height: 90vh !important;
+      }
+    </style>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/output.json",
+        { onProgress: UnityProgress }
+      );
+    </script>
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+
+      <div class="button">
+        <img src="./TemplateData/Button_all.png" alt="" />
+        <a href="#" class="button-top"></a>
+        <a href="#" class="button-down"></a>
+        <a href="#" class="button-left"></a>
+        <a href="#" class="button-right"></a>
+      </div>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+    </div>
+
+    <div id="lightbox" style="display: none">
+      <a href="#" id="lightbox-close">X</a>
+      <iframe
+        id="youtube"
+        width="560"
+        height="315"
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/output_FPS.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/output_FPS.data.unityweb",
+        frameworkUrl: buildUrl + "/output_FPS.framework.js.unityweb",
+        codeUrl: buildUrl + "/output_FPS.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Getac_test",
+        productVersion: "0.1",
+      };
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        })
+          .then((unityInstance) => {
+            loadingBar.style.display = "none";
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          })
+          .catch((message) => {
+            alert(message);
+          });
+      };
+      document.body.appendChild(script);
+    </script>
+
+    <script>
+      let close = document.getElementById("lightbox-close");
+      let lbBox = document.getElementById("lightbox");
+      let youtube = document.getElementById("youtube");
+      close.addEventListener("click", function() {
+        youtube.setAttribute("src", "");
+        lbBox.style.display = "none";
+      });
+
+      function CheckLoad(url) {
+        youtube.setAttribute("src", `https://www.youtube.com/embed/${url}`);
+        lbBox.style.display = "block";
+      }
+
+      document
+        .querySelector(".button-top")
+        .addEventListener("mousedown", function() {
+          getEvent("WebToUnity_V", 1.0, "click-down");
+        });
+
+      document
+        .querySelector(".button-top")
+        .addEventListener("mouseup", function() {
+          getEvent("WebToUnity_V", 0, "click-up");
+        });
+
+      function getEvent(val1, val2, val3) {
+        console.log(val3);
+        unityInstance.SendMessage("RigidBodyFPSController", val1, val2);
+      }
+    </script>
+  </body>
+</html>
