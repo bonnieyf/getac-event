@@ -149,72 +149,73 @@
 
       // top
       buttonUp.addEventListener("mousedown", function(e) {
-        console.log(e.type);
-        getEvent("WebToUnity_V", 1.0);
+        console.log("down");
+        if (e.type === "mousedown") getEvent("WebToUnity_V", 1.0);
       });
 
-      buttonUp.addEventListener("mouseup", function() {
-        getEvent("WebToUnity_V", 0);
+      buttonUp.addEventListener("mouseup", function(e) {
+        console.log("up");
+        if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
       });
 
       buttonUp.addEventListener("touchstart", function(e) {
-        console.log(e.type);
-        getEvent("WebToUnity_V", 1.0);
+        console.log("down");
+        if (e.type === "touchstart") getEvent("WebToUnity_V", 1.0);
       });
 
-      buttonUp.addEventListener("touchend", function() {
-        getEvent("WebToUnity_V", 0);
+      buttonUp.addEventListener("touchend", function(e) {
+        console.log("up");
+        if (e.type === "touchend") getEvent("WebToUnity_V", 0);
       });
 
-      //down
-      buttonDown.addEventListener("mousedown", function() {
-        getEvent("WebToUnity_V", -1.0);
+      buttonDown.addEventListener("mousedown", function(e) {
+        if (e.type === "mousedown") getEvent("WebToUnity_V", -1.0);
       });
 
-      buttonDown.addEventListener("mouseup", function() {
-        getEvent("WebToUnity_V", 0);
+      buttonDown.addEventListener("mouseup", function(e) {
+        if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
       });
 
-      buttonDown.addEventListener("touchstart", function() {
-        getEvent("WebToUnity_V", -1.0);
+      buttonDown.addEventListener("touchstart", function(e) {
+        if (e.type === "touchstart") getEvent("WebToUnity_V", -1.0);
       });
 
-      buttonDown.addEventListener("touchend", function() {
-        getEvent("WebToUnity_V", 0);
+      buttonDown.addEventListener("touchend", function(e) {
+        if (e.type === "touchend") getEvent("WebToUnity_V", 0);
       });
 
       //left
-      buttonLeft.addEventListener("mousedown", function() {
-        getEvent("WebToUnity_H", -1.0);
+      buttonLeft.addEventListener("mousedown", function(e) {
+        if (e.type === "mousedown") getEvent("WebToUnity_H", -1.0);
       });
 
-      buttonLeft.addEventListener("mouseup", function() {
-        getEvent("WebToUnity_H", 0);
+      buttonLeft.addEventListener("mouseup", function(e) {
+        if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
       });
 
-      buttonLeft.addEventListener("touchstart", function() {
-        getEvent("WebToUnity_H", -1.0);
+      buttonLeft.addEventListener("touchstart", function(e) {
+        if (e.type === "touchstart") getEvent("WebToUnity_H", -1.0);
       });
 
-      buttonLeft.addEventListener("touchend", function() {
-        getEvent("WebToUnity_H", 0);
+      buttonLeft.addEventListener("touchend", function(e) {
+        if (e.type === "touchend") getEvent("WebToUnity_H", 0);
       });
 
       //right
-      buttonRight.addEventListener("mousedown", function() {
-        getEvent("WebToUnity_H", 1.0);
+      buttonRight.addEventListener("mousedown", function(e) {
+        if (e.type === "mousedown") getEvent("WebToUnity_H", 1.0);
       });
 
-      buttonRight.addEventListener("mouseup", function() {
-        getEvent("WebToUnity_H", 0);
+      buttonRight.addEventListener("mouseup", function(e) {
+        if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
       });
 
-      buttonRight.addEventListener("touchstart", function() {
-        getEvent("WebToUnity_H", 1.0);
+      buttonRight.addEventListener("touchstart", function(e) {
+        if (e.type === "touchstart") getEvent("WebToUnity_H", 1.0);
       });
 
-      buttonRight.addEventListener("touchend", function() {
-        getEvent("WebToUnity_H", 0);
+      buttonRight.addEventListener("touchend", function(e) {
+        if (e.type === "touchend") getEvent("WebToUnity_H", 0);
       });
 
       function getEvent(val1, val2) {
