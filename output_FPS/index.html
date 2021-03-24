@@ -4,17 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | Getac_test</title>
-    <link rel="shortcut icon" href="./TemplateData/favicon.ico" />
-    <link rel="stylesheet" href="./TemplateData/style.css" />
-    <script src="./TemplateData/UnityProgress.js"></script>
-    <script src="./Build/UnityLoader2.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate(
-        "unityContainer",
-        "Build/output_FPS.json",
-        { onProgress: UnityProgress }
-      );
-    </script>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
     <style>
       #lightbox {
         position: fixed;
@@ -44,11 +37,73 @@
         width: 100%;
         height: 100%;
       }
+
+      .button {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 238px;
+      }
+
+      .button-top {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        width: 80px;
+        padding-top: 70px;
+        /* background-color: red; */
+      }
+      .button-down {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 80px;
+        padding-top: 70px;
+        /* background-color: blue; */
+      }
+
+      .button-left {
+        position: absolute;
+        top: 80px;
+        left: 0%;
+        width: 80px;
+        padding-top: 70px;
+        /* background-color: green; */
+      }
+
+      .button-right {
+        position: absolute;
+        top: 80px;
+        left: 160px;
+        width: 80px;
+        padding-top: 70px;
+        /* background-color: green; */
+      }
+
+      #unity-canvas {
+        width: 100vw !important;
+        height: 90vh !important;
+      }
     </style>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/output_FPS.json",
+        { onProgress: UnityProgress }
+      );
+    </script>
   </head>
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 100vw; height: 100vh"></div>
+    </div>
+
+    <div class="button">
+      <img src="./TemplateData/Button_all.png" alt="" />
+      <a href="#" class="button-top"></a>
+      <a href="#" class="button-down"></a>
+      <a href="#" class="button-left"></a>
+      <a href="#" class="button-right"></a>
     </div>
 
     <div id="lightbox" style="display: none">
@@ -63,6 +118,7 @@
         allowfullscreen
       ></iframe>
     </div>
+
     <script>
       let close = document.getElementById("lightbox-close");
       let lbBox = document.getElementById("lightbox");
@@ -75,6 +131,85 @@
       function CheckLoad(url) {
         youtube.setAttribute("src", `https://www.youtube.com/embed/${url}`);
         lbBox.style.display = "block";
+      }
+
+      const buttonUp = document.querySelector(".button-top");
+      const buttonDown = document.querySelector(".button-down");
+      const buttonLeft = document.querySelector(".button-left");
+      const buttonRight = document.querySelector(".button-right");
+
+      // top
+      buttonUp.addEventListener("mousedown", function(e) {
+        console.log(e.type);
+        getEvent("WebToUnity_V", 1.0);
+      });
+
+      buttonUp.addEventListener("mouseup", function() {
+        getEvent("WebToUnity_V", 0);
+      });
+
+      buttonUp.addEventListener("touchstart", function(e) {
+        console.log(e.type);
+        getEvent("WebToUnity_V", 1.0);
+      });
+
+      buttonUp.addEventListener("touchend", function() {
+        getEvent("WebToUnity_V", 0);
+      });
+
+      //down
+      buttonDown.addEventListener("mousedown", function() {
+        getEvent("WebToUnity_V", -1.0);
+      });
+
+      buttonDown.addEventListener("mouseup", function() {
+        getEvent("WebToUnity_V", 0);
+      });
+
+      buttonDown.addEventListener("touchstart", function() {
+        getEvent("WebToUnity_V", -1.0);
+      });
+
+      buttonDown.addEventListener("touchend", function() {
+        getEvent("WebToUnity_V", 0);
+      });
+
+      //left
+      buttonLeft.addEventListener("mousedown", function() {
+        getEvent("WebToUnity_H", -1.0);
+      });
+
+      buttonLeft.addEventListener("mouseup", function() {
+        getEvent("WebToUnity_H", 0);
+      });
+
+      buttonLeft.addEventListener("touchstart", function() {
+        getEvent("WebToUnity_H", -1.0);
+      });
+
+      buttonLeft.addEventListener("touchend", function() {
+        getEvent("WebToUnity_H", 0);
+      });
+
+      //right
+      buttonRight.addEventListener("mousedown", function() {
+        getEvent("WebToUnity_H", 1.0);
+      });
+
+      buttonRight.addEventListener("mouseup", function() {
+        getEvent("WebToUnity_H", 0);
+      });
+
+      buttonRight.addEventListener("touchstart", function() {
+        getEvent("WebToUnity_H", 1.0);
+      });
+
+      buttonRight.addEventListener("touchend", function() {
+        getEvent("WebToUnity_H", 0);
+      });
+
+      function getEvent(val1, val2) {
+        unityInstance.SendMessage("RigidBodyFPSController", val1, val2);
       }
     </script>
   </body>
