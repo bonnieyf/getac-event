@@ -107,13 +107,13 @@
       <div id="unityContainer" style="width: 100vw; height: 100vh"></div>
     </div>
 
-    <div class="button">
+    <!-- <div class="button">
       <img src="./TemplateData/Button_all.png" alt="" />
       <a href="#" class="button-top"></a>
       <a href="#" class="button-down"></a>
       <a href="#" class="button-left"></a>
       <a href="#" class="button-right"></a>
-    </div>
+    </div> -->
 
     <div id="lightbox" style="display: none">
       <a href="#" id="lightbox-close">X</a>
@@ -142,85 +142,85 @@
         lbBox.style.display = "block";
       }
 
-      const buttonUp = document.querySelector(".button-top");
-      const buttonDown = document.querySelector(".button-down");
-      const buttonLeft = document.querySelector(".button-left");
-      const buttonRight = document.querySelector(".button-right");
+      // const buttonUp = document.querySelector(".button-top");
+      // const buttonDown = document.querySelector(".button-down");
+      // const buttonLeft = document.querySelector(".button-left");
+      // const buttonRight = document.querySelector(".button-right");
 
-      // top
-      buttonUp.addEventListener("mousedown", function(e) {
-        console.log("down");
-        if (e.type === "mousedown") getEvent("WebToUnity_V", 1.0);
-      });
+      // // top
+      // buttonUp.addEventListener("mousedown", function(e) {
+      //   console.log("down");
+      //   if (e.type === "mousedown") getEvent("WebToUnity_V", 1.0);
+      // });
 
-      buttonUp.addEventListener("mouseup", function(e) {
-        console.log("up");
-        if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
-      });
+      // buttonUp.addEventListener("mouseup", function(e) {
+      //   console.log("up");
+      //   if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
+      // });
 
-      buttonUp.addEventListener("touchstart", function(e) {
-        console.log("down");
-        if (e.type === "touchstart") getEvent("WebToUnity_V", 1.0);
-      });
+      // buttonUp.addEventListener("touchstart", function(e) {
+      //   console.log("down");
+      //   if (e.type === "touchstart") getEvent("WebToUnity_V", 1.0);
+      // });
 
-      buttonUp.addEventListener("touchend", function(e) {
-        console.log("up");
-        if (e.type === "touchend") getEvent("WebToUnity_V", 0);
-      });
+      // buttonUp.addEventListener("touchend", function(e) {
+      //   console.log("up");
+      //   if (e.type === "touchend") getEvent("WebToUnity_V", 0);
+      // });
 
-      buttonDown.addEventListener("mousedown", function(e) {
-        if (e.type === "mousedown") getEvent("WebToUnity_V", -1.0);
-      });
+      // buttonDown.addEventListener("mousedown", function(e) {
+      //   if (e.type === "mousedown") getEvent("WebToUnity_V", -1.0);
+      // });
 
-      buttonDown.addEventListener("mouseup", function(e) {
-        if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
-      });
+      // buttonDown.addEventListener("mouseup", function(e) {
+      //   if (e.type === "mouseup") getEvent("WebToUnity_V", 0);
+      // });
 
-      buttonDown.addEventListener("touchstart", function(e) {
-        if (e.type === "touchstart") getEvent("WebToUnity_V", -1.0);
-      });
+      // buttonDown.addEventListener("touchstart", function(e) {
+      //   if (e.type === "touchstart") getEvent("WebToUnity_V", -1.0);
+      // });
 
-      buttonDown.addEventListener("touchend", function(e) {
-        if (e.type === "touchend") getEvent("WebToUnity_V", 0);
-      });
+      // buttonDown.addEventListener("touchend", function(e) {
+      //   if (e.type === "touchend") getEvent("WebToUnity_V", 0);
+      // });
 
-      //left
-      buttonLeft.addEventListener("mousedown", function(e) {
-        if (e.type === "mousedown") getEvent("WebToUnity_H", -1.0);
-      });
+      // //left
+      // buttonLeft.addEventListener("mousedown", function(e) {
+      //   if (e.type === "mousedown") getEvent("WebToUnity_H", -1.0);
+      // });
 
-      buttonLeft.addEventListener("mouseup", function(e) {
-        if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
-      });
+      // buttonLeft.addEventListener("mouseup", function(e) {
+      //   if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
+      // });
 
-      buttonLeft.addEventListener("touchstart", function(e) {
-        if (e.type === "touchstart") getEvent("WebToUnity_H", -1.0);
-      });
+      // buttonLeft.addEventListener("touchstart", function(e) {
+      //   if (e.type === "touchstart") getEvent("WebToUnity_H", -1.0);
+      // });
 
-      buttonLeft.addEventListener("touchend", function(e) {
-        if (e.type === "touchend") getEvent("WebToUnity_H", 0);
-      });
+      // buttonLeft.addEventListener("touchend", function(e) {
+      //   if (e.type === "touchend") getEvent("WebToUnity_H", 0);
+      // });
 
-      //right
-      buttonRight.addEventListener("mousedown", function(e) {
-        if (e.type === "mousedown") getEvent("WebToUnity_H", 1.0);
-      });
+      // //right
+      // buttonRight.addEventListener("mousedown", function(e) {
+      //   if (e.type === "mousedown") getEvent("WebToUnity_H", 1.0);
+      // });
 
-      buttonRight.addEventListener("mouseup", function(e) {
-        if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
-      });
+      // buttonRight.addEventListener("mouseup", function(e) {
+      //   if (e.type === "mouseup") getEvent("WebToUnity_H", 0);
+      // });
 
-      buttonRight.addEventListener("touchstart", function(e) {
-        if (e.type === "touchstart") getEvent("WebToUnity_H", 1.0);
-      });
+      // buttonRight.addEventListener("touchstart", function(e) {
+      //   if (e.type === "touchstart") getEvent("WebToUnity_H", 1.0);
+      // });
 
-      buttonRight.addEventListener("touchend", function(e) {
-        if (e.type === "touchend") getEvent("WebToUnity_H", 0);
-      });
+      // buttonRight.addEventListener("touchend", function(e) {
+      //   if (e.type === "touchend") getEvent("WebToUnity_H", 0);
+      // });
 
-      function getEvent(val1, val2) {
-        unityInstance.SendMessage("RigidBodyFPSController", val1, val2);
-      }
+      // function getEvent(val1, val2) {
+      //   unityInstance.SendMessage("RigidBodyFPSController", val1, val2);
+      // }
     </script>
   </body>
 </html>
