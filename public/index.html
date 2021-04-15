@@ -97,5 +97,22 @@
         })(document, window);
     </script>
     <!-- End of REVE Chat Script -->
+    <script>
+      function downloadJSAtOnload() {
+        var iframe = document.createElement("iframe");
+        iframe.style.opacity = "0";
+        iframe.src = "./output_FPS/index.html";
+        document.body.appendChild(iframe);
+        console.log(
+          "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DONNE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        );
+      }
+
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
   </body>
 </html>
