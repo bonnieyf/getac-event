@@ -7,10 +7,38 @@ function TradShow() {
   //   "../output_FPS/Build/UnityLoader.js"
   // );
 
+  const checkIframe = () => {
+    let eventMethod = window.addEventListener
+      ? "addEventListener"
+      : "attachEvent";
+    let eventer = window[eventMethod];
+    let messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+
+    eventer(messageEvent, function(e) {
+      // if (e.origin !== 'http://the-trusted-iframe-origin.com') return;
+
+      if (e.data === "loaded" || e.message === "loaded")
+        console.log("Message from iframe just came!");
+
+      console.log(e);
+    });
+
+    // if (iframeDoc.readyState == "complete") {
+    //   iframe.contentWindow.onload = function() {
+    //     console.log("I am loaded");
+    //   };
+    //   return;
+    // }
+
+    // window.setTimeout(checkIframeLoaded, 100);
+  };
+
   return (
     <>
       <div id="tradshow">
         <iframe
+          id="iframe-show"
+          onLoad={checkIframe()}
           src={process.env.PUBLIC_URL + "/output_FPS/index.html"}
           frameborder="0"
         />
