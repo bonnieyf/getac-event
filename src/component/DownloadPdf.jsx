@@ -30,13 +30,6 @@ function DownloadPdf() {
             title={t("homepageSection3.title")}
             desc={t("homepageSection3.desc")}
           />
-          <HomepageProduct1 />
-          <HomeDownload />
-          <HomeAr />
-          <HomepageProduct2 />
-
-          <HomeArticle2 />
-          <MainBottom />
         </div>
       </main>
     </>

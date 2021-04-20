@@ -29,90 +29,10 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-
-    <!-- <script src="https://www.momentcrm.com/embed"></script>
-    <script>
-      MomentCRM("init", {
-        teamId: "happy_getac",
-        doChat: true,
-        doTracking: true,
-      });
-    </script> -->
-
-    <!-- <script>
-      function initFreshChat() {
-        window.fcWidget.init({
-          token: "d0c51731-997d-4b1a-8ef5-af4d605ad5c6",
-          host: "https://wchat.freshchat.com",
-        });
-      }
-      function initialize(i, t) {
-        var e;
-        i.getElementById(t)
-          ? initFreshChat()
-          : (((e = i.createElement("script")).id = t),
-            (e.async = !0),
-            (e.src = "https://wchat.freshchat.com/js/widget.js"),
-            (e.onload = initFreshChat),
-            i.head.appendChild(e));
-      }
-      function initiateCall() {
-        initialize(document, "freshchat-js-sdk");
-      }
-      window.addEventListener
-        ? window.addEventListener("load", initiateCall, !1)
-        : window.attachEvent("load", initiateCall, !1);
-    </script> -->
-
-    <!-- Start of REVE Chat Script-->
-    <script type="text/javascript">
-      window.$_REVECHAT_API ||
-        (function(d, w) {
-          var r = ($_REVECHAT_API = function(c) {
-            r._.push(c);
-          });
-          w.__revechat_account = "4586511";
-          w.__revechat_version = 2;
-          r._ = [];
-          var rc = d.createElement("script");
-          rc.type = "text/javascript";
-          rc.async = true;
-          rc.setAttribute("charset", "utf-8");
-          rc.src =
-            ("https:" == document.location.protocol ? "https://" : "http://") +
-            "static.revechat.com/widget/scripts/new-livechat.js?" +
-            new Date().getTime();
-          var s = d.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(rc, s);
-        })(document, window);
-    </script>
-    <!-- End of REVE Chat Script -->
-    <script>
-      function downloadJSAtOnload() {
-        var iframe = document.createElement("iframe");
-        iframe.style.opacity = "0";
-        iframe.src = "./output_FPS/index.html";
-        document.body.appendChild(iframe);
-        console.log(
-          "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DONNE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        );
-      }
-
-      if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-      else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-      else window.onload = downloadJSAtOnload;
-    </script>
+    <script
+      async
+      type="text/javascript"
+      src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/dff3ce0ebc764bf7baf28c2a425fb76f934493c3764c463ab5b354cea4d192ee.js"
+    ></script>
   </body>
 </html>
