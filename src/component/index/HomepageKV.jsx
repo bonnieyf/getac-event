@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import jsPDF from "jspdf";
 import * as htmlToImage from "html-to-image";
+const URL = process.env.PUBLIC_URL;
 
 function HomepageKV(props) {
   let style = {
@@ -71,13 +72,13 @@ function HomepageKV(props) {
           ) : (
             <>
               <Link
-                to={`/${i18n.language}/tradshow`}
+                to={`${URL}/${i18n.language}/tradshow`}
                 class="button button-icon-360"
               >
                 {t("button.UnlockVirtualExhibition")}
               </Link>
               <Link
-                to={`/${i18n.language}/downlaod`}
+                to={`${URL}/${i18n.language}/downlaod`}
                 class="button button-ghost"
               >
                 {t("button.LetsTalk")}
