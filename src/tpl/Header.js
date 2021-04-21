@@ -1,7 +1,6 @@
 import logoPath from "./../assets/media/getac-logo.svg";
 import React, { useState } from "react";
 import i18n from "../i18n";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import history from "../history";
 
 function Header() {

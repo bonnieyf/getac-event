@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <BrowserRouter history={history}>
+        <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/:lang">
               <HomePage />

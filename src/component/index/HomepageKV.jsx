@@ -1,7 +1,7 @@
 import window10Logo from "./../../assets/icons/windows-10-logo.svg";
 import arrow from "./../../assets/icons/arrow-down-orange.svg";
 import bgPath from "./../../assets/media/getac-keyvisual_CTe_v3-landingpage-layout.jpg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import jsPDF from "jspdf";
