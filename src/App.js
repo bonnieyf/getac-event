@@ -12,7 +12,9 @@ import history from "./history";
 
 function langRedirect(props) {
   const defaultLang = i18n.language;
-  const redirectPath = `/${defaultLang}${props.history.location.pathname}`;
+  const redirectPath = `/getac-event/${process.env.PUBLIC_URL}/${defaultLang}${
+    props.history.location.pathname
+  }`;
   props.history.replace({
     pathname: redirectPath,
   });
