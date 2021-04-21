@@ -58,22 +58,28 @@ function HomepageKV(props) {
           >
             {t("homepageKv.title")}
           </a>
-
           <h1>{t("homepageKV.title")}</h1>
           <p class="subline">{t("homepageKV.desc")}</p>
 
-          {props ? (
+          {props?.isDownload ? (
             <>
+              q
               <a class="button button-download" onClick={onDownload}>
                 PDF Download
               </a>
             </>
           ) : (
             <>
-              <Link to="/tradshow" class="button button-icon-360">
+              <Link
+                to={`/${i18n.language}/tradshow`}
+                class="button button-icon-360"
+              >
                 {t("button.UnlockVirtualExhibition")}
               </Link>
-              <Link to="/downlaod" class="button button-ghost">
+              <Link
+                to={`/${i18n.language}/downlaod`}
+                class="button button-ghost"
+              >
                 {t("button.LetsTalk")}
               </Link>
             </>

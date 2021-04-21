@@ -1,24 +1,25 @@
-import logo from "./../assets/media/getac-logo.svg";
+import logoPath from "./../assets/media/getac-logo.svg";
 import React, { useState } from "react";
 import i18n from "../i18n";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { withNamespaces } from "react-i18next";
+import history from "../history";
 
 function Header() {
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const [curlang, setLang] = useState(i18n.language);
 
-  function handleSelectChange(e) {
-    changeLanguage(e.target.value);
-  }
+  const handleSelectChange = (e) => {
+    let newLang = e.target.value;
+    i18n.changeLanguage(newLang);
+    setLang(newLang);
+    history.push(`/${newLang}`);
+  };
 
   return (
     <header class="header">
       <div class="gt-grid">
-        <Link to="/" class="logo">
-          <img src={logo} width="97" height="29" alt="Getac Logo" />
-        </Link>
+        <a href={`/${curlang}`} class="logo">
+          <img src={logoPath} width="97" height="29" alt="Getac Logo" />
+        </a>
 
         <nav class="navigation">
           <a href="#product-updates">Product Updates</a>
@@ -40,6 +41,7 @@ function Header() {
               <select
                 class="language-switch-select"
                 onChange={handleSelectChange}
+                value={curlang}
               >
                 <option value="en">English</option>
                 <option value="fr">Français</option>
