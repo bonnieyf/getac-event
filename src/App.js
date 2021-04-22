@@ -12,9 +12,7 @@ import history from "./history";
 function langRedirect(props) {
   const defaultLang = i18n.language;
   const pathname = window.location.pathname;
-  const redirectPath = `${pathname}${defaultLang}${
-    props.history.location.pathname
-  }`;
+  const redirectPath = `/${defaultLang}${props.history.location.pathname}`;
   props.history.replace({
     pathname: redirectPath,
   });
