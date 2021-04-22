@@ -33,7 +33,7 @@ function App() {
             </Route>
             <Route path="/:lang/tradshow" component={TradShow} />
             <Route path="/:lang/downlaod" component={DownloadPdf} />
-            <Route path="*" render={langRedirect} />
+            <Route path="/" render={langRedirect} />
           </Switch>
         </HashRouter>
       </main>
